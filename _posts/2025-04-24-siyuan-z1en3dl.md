@@ -6,7 +6,7 @@ tags:
   - siyuan
 categories:
   - Homelabbing
-layout: post
+layout: single
 published: true
 ---
 
