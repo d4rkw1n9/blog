@@ -1,13 +1,15 @@
 {% comment %}
   Sidebar component included in page layouts (single, archive, etc.).
-  Renders author profile (if enabled) and optional page-specific sidebar content.
-  MODIFIED to include dynamic Tag and Category lists below author profile.
+  Renders author profile (if enabled), dynamic Tag/Category lists,
+  and optional page-specific sidebar content.
 {% endcomment %}
 
-{% if page.author_profile or layout.author_profile or page.sidebar %}
+{% if page.author_profile or layout.author_profile or page.sidebar or site.tags.size > 0 or site.categories.size > 0 %}
   <div class="sidebar sticky">
+
     {% comment %} --- Renders Author Profile --- {% endcomment %}
     {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
+
 
     {% comment %} === ADDED: Tags Section Start === {% endcomment %}
     {% if site.tags.size > 0 %}
@@ -27,6 +29,7 @@
     {% endif %}
     {% comment %} === ADDED: Tags Section End === {% endcomment %}
 
+
     {% comment %} === ADDED: Categories Section Start === {% endcomment %}
     {% if site.categories.size > 0 %}
       <nav class="nav__list">
@@ -45,6 +48,7 @@
     {% endif %}
     {% comment %} === ADDED: Categories Section End === {% endcomment %}
 
+
     {% comment %} === Original Page-Specific Sidebar Section === {% endcomment %}
     {% comment %} (Renders content defined in a page's 'sidebar:' front matter) {% endcomment %}
     {% if page.sidebar %}
@@ -61,5 +65,6 @@
         {% include nav_list nav=page.sidebar.nav %}
       {% endif %}
     {% endif %}
+
   </div>
 {% endif %}
