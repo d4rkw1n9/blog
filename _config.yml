@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "Darkwing Duck"
-  avatar           : "/assets/images/leftblank_logo.png"
+  avatar           : "/assets/leftblank_logo.png"
   bio              : "Reformed and transformed."
   location         : "localhost"
   email            : "blog.41jxc@cloudchaser.uk"
