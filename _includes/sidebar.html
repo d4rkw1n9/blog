@@ -1,19 +1,65 @@
+{% comment %}
+  Sidebar component included in page layouts (single, archive, etc.).
+  Renders author profile (if enabled) and optional page-specific sidebar content.
+  MODIFIED to include dynamic Tag and Category lists below author profile.
+{% endcomment %}
+
 {% if page.author_profile or layout.author_profile or page.sidebar %}
   <div class="sidebar sticky">
-  {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
-  {% if page.sidebar %}
-    {% for s in page.sidebar %}
-      {% if s.image %}
-        <img src="{{ s.image | relative_url }}"
-             alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
-      {% endif %}
-      {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
-      {% if s.text %}{{ s.text | markdownify }}{% endif %}
-      {% if s.nav %}{% include nav_list nav=s.nav %}{% endif %}
-    {% endfor %}
-    {% if page.sidebar.nav %}
-      {% include nav_list nav=page.sidebar.nav %}
+    {% comment %} --- Renders Author Profile --- {% endcomment %}
+    {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
+
+    {% comment %} === ADDED: Tags Section Start === {% endcomment %}
+    {% if site.tags.size > 0 %}
+      <nav class="nav__list">
+        <h3 class="nav__title">{{ site.data.ui-text[site.locale].tags_label | default: "Tags" }}</h3>
+        <ul class="nav__items">
+          {% assign sorted_tags = site.tags | keys | sort %}
+          {% for tag_name in sorted_tags %}
+            <li>
+              <a href="{{ site.baseurl }}/tags/{{ tag_name | slugify }}/" class="nav__item">
+                {{ tag_name }} <span class="nav__sublabel">({{ site.tags[tag_name].size }})</span>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
     {% endif %}
-  {% endif %}
+    {% comment %} === ADDED: Tags Section End === {% endcomment %}
+
+    {% comment %} === ADDED: Categories Section Start === {% endcomment %}
+    {% if site.categories.size > 0 %}
+      <nav class="nav__list">
+        <h3 class="nav__title">{{ site.data.ui-text[site.locale].categories_label | default: "Categories" }}</h3>
+        <ul class="nav__items">
+          {% assign sorted_categories = site.categories | keys | sort %}
+          {% for category_name in sorted_categories %}
+            <li>
+              <a href="{{ site.baseurl }}/categories/{{ category_name | slugify }}/" class="nav__item">
+                {{ category_name }} <span class="nav__sublabel">({{ site.categories[category_name].size }})</span>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    {% endif %}
+    {% comment %} === ADDED: Categories Section End === {% endcomment %}
+
+    {% comment %} === Original Page-Specific Sidebar Section === {% endcomment %}
+    {% comment %} (Renders content defined in a page's 'sidebar:' front matter) {% endcomment %}
+    {% if page.sidebar %}
+      {% for s in page.sidebar %}
+        {% if s.image %}
+          <img src="{{ s.image | relative_url }}"
+               alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
+        {% endif %}
+        {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
+        {% if s.text %}{{ s.text | markdownify }}{% endif %}
+        {% if s.nav %}{% include nav_list nav=s.nav %}{% endif %}
+      {% endfor %}
+      {% if page.sidebar.nav %}
+        {% include nav_list nav=page.sidebar.nav %}
+      {% endif %}
+    {% endif %}
   </div>
 {% endif %}
