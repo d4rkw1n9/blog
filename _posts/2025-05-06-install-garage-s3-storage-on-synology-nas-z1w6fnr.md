@@ -18,8 +18,6 @@ published: true
 
 In this guide, I will explain how to install Garage ([https://garagehq.deuxfleurs.fr/documentation/quick-start/](https://garagehq.deuxfleurs.fr/documentation/quick-start/)) on Synology NAS. Garage is "an open-source distributed object storage service tailored for self-hosting". The following example will provide instructions to set garage up without replication (i.e. a single bucket)
 
-‍
-
 ## Creating Folder Structure
 
 First of all, you will need to create the following folder structure on your Syno:
@@ -27,8 +25,6 @@ First of all, you will need to create the following folder structure on your Syn
 * /volume1/docker/garage
 * /volume1/docker/garage/meta
 * /volume1/docker/garage/data
-
-  ‍
 
 ## Create garage.toml
 
@@ -65,8 +61,6 @@ admin_token = "SOMEADMINTOKEN" # you can use "openssl rand -base64 32" to create
 
 Make sure to add some secure string instead of SOMESECRET, SOMETOKEN and SOMEADMINTOKEN. Also, adjust to your domain and the region. In my case, I only needed the root_domain for the API.
 
-‍
-
 ## Create the docker-compose.yaml
 
 Next step is to create a docker-compose as follows:
@@ -96,8 +90,6 @@ This should get the container up and running.
 
 Before you can use it as an S3 storage, you need to run some commands inside of the garage docker container, to check the status, create a cluster layout, a bucket and a key.
 
-‍
-
 ## Initialize the Storage
 
 SSH into your NAS, and paste this command:
@@ -125,8 +117,6 @@ Let's create now a cluster layout, by entering this command, whereas the node_id
 After this, the layout has to be applied with:
 
 ​`garage layout apply --version 1`​
-
-‍
 
 ## Creating Bucket and Key
 
