@@ -17,12 +17,12 @@ minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Left _____."
+title                    : "Signo Labz"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Darkwing Duck"
-description              : "A blog with some notes and thoughts."
-url                      : "blog.leftblank.xyz"
+name                     : "Signo Labz"
+description              : "A simple blog with some personal notes and thoughts."
+url                      : "blog.signolabz.com"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -67,7 +67,7 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-  hide                   : # true, false (default)
+  hide                   : true
 search                   : # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
@@ -113,11 +113,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Darkwing Duck"
-  avatar           : "/assets/leftblank_logo.png"
-  bio              : "Reformed and transformed."
+  name             : "Signo Labz"
+  avatar           : "/assets/signolabz_logo.jpg"
+  bio              : "Selfhosting made easy."
   location         : "localhost"
-  email            : "blog.hiqg1@leftblank.xyz"
+  email            : "blog.zx597@signolabz.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
