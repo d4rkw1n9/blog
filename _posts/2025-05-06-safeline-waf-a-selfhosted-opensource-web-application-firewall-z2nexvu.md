@@ -15,7 +15,7 @@ published: true
 
 
 
-# SafeLine WAF: A self-hosted, open-source Web Application Firewall
+
 
 *What* *is* SafeLine WAF? It is a self-hosted Web Application Firewall that helps you protect your web apps from various attacks and exploits. Some features and limitations of the free edition vs. the commercial licenses:
 
