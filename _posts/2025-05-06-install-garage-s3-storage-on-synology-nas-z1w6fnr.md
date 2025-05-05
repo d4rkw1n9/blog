@@ -151,4 +151,12 @@ Next we run this command again, this time the Authorized Buckets should not be e
 
 The bucket is now ready to be filled with whatever data you choose. For a guide on how to connect SiYuan to your bucket, stay tuned for my next post.
 
+---
+
+If you like my work and would like to support it, feel free to make a donation of any amount in USDT (TRC-20 Network ONLY) to the following address:
+
+**TKtyyfWBF7cympu2mELRNSEViooD65XEVs**
+
+![usdt_address](http://127.0.0.1:50128/assets/usdt_address-20250505203604-xr5s012.jpeg)​
+
 ‍
