@@ -50,4 +50,10 @@ In my opinion, one of the most beneficial features is the option to add an addit
 
 Install guide on Synology NAS and more posts on how to use it are in the pipeline - stay tuned!
 
-‍
+---
+
+If you like my work and would like to support it, feel free to make a donation of any amount in USDT (TRC-20 Network ONLY) to the following address:
+
+TKtyyfWBF7cympu2mELRNSEViooD65XEVs
+
+![usdt_address](/assets/images/usdt_address-20250505210352-ov0ohqk.jpg)
