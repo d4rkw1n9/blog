@@ -16,7 +16,7 @@ published: true
 
 
 
-# Installing SafeLine WAF on Synology NAS
+
 
 In this post, I will explain the basic setup of the SafeLine WAF free edition on a Synology NAS.
 
