@@ -14,7 +14,7 @@ published: true
 
 
 
-# How to Connect SiYuan Note Taking App With Garage
+
 
 In a previous guide, I explained how to install Garage S3 Storage on your Synology NAS. This blog post will show how to connect SiYuan to the previously created bucket.
 
