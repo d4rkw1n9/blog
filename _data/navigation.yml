@@ -12,6 +12,7 @@ main:
   #   url: /sitemap/
   - title: "Tags"
     url: /tags/
-
   - title: "Categories"
     url: /categories/
+  - title: "About"
+    url: /about/ # Matches the permalink in about.md
