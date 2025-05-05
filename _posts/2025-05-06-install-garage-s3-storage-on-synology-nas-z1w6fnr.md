@@ -153,12 +153,10 @@ The bucket is now ready to be filled with whatever data you choose. For a guide 
 
 ---
 
-If you like my work and would like to support it, feel free to make a donation of any amount in USDT (TRC-20 Network ONLY) to the following address:
-
-![image](http://127.0.0.1:50128/assets/image-20250505204223-ea0nbmp.png)​
+If you like my work and would like to support it, feel free to make a donation of any amount in USDT (TRC-20 Network ONLY) to the following address:​​
 
 **TKtyyfWBF7cympu2mELRNSEViooD65XEVs**
 
-‍
+![image](/assets/images/image-20250505204223-ea0nbmp.png)​
 
 ‍
