@@ -206,4 +206,10 @@ Find more information on:
 
 [https://docs.waf.chaitin.com/en/GetStarted/Deploy](https://docs.waf.chaitin.com/en/GetStarted/Deploy)
 
-‍
+---
+
+If you like my work and would like to support it, feel free to make a donation of any amount in USDT (TRC-20 Network ONLY) to the following address:
+
+TKtyyfWBF7cympu2mELRNSEViooD65XEVs
+
+![usdt_address](/assets/images/usdt_address-20250505210352-ov0ohqk.jpg)
