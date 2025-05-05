@@ -48,7 +48,7 @@ rpc_secret = "SOMESECRET" # you can use "openssl rand -hex 32" to create the tok
 compression_level = 2
 
 [s3_api]
-s3_region = "garage"
+s3_region = "WHATEVERREGION" # you can select any name, simple as "bucket"
 api_bind_addr = "[::]:3900"
 root_domain = ".s3.garage.localhost" # or garage.sample.com, for example
 
