@@ -14,7 +14,7 @@ published: true
 
 
 
-# Install Garage S3 Storage on Synology NAS
+
 
 In this guide, I will explain how to install Garage ([https://garagehq.deuxfleurs.fr/documentation/quick-start/](https://garagehq.deuxfleurs.fr/documentation/quick-start/)) on Synology NAS. Garage is "an open-source distributed object storage service tailored for self-hosting". The following example will provide instructions to set garage up without replication (i.e. a single bucket)
 
