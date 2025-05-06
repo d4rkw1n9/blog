@@ -16,7 +16,7 @@ published: true
 
 
 
-# How to Test and Use API on SafeLine WAF
+
 
 In this quick tutorial I will show you how you can test and potentially use the API connection of SafeLine WAF. For this purpose, I will use Hoppscotch desktop application ([https://docs.hoppscotch.io/documentation/clients/desktop](https://docs.hoppscotch.io/documentation/clients/desktop)). There is an online version, too, but it is better to use a local installation due to security best practices. The API documentation of SafeLine WAF can be reached via your SafeLine instance `Settings > Management > API DOC`​ and contains the available commands. Here you can also create your API Token.
 
